@@ -5,12 +5,14 @@ import Textbox from "./components/Textbox";
 import Chat from "./components/Chat";
 
 let text1 =
-  "Welcome to abyss abyss is a chatbot project that's focused mainly on the psychology and therapy of people.";
+  "Abyss'e hoş geldiniz. Abyss, insan psikolojisi ve terapisine odaklanan bir sohbet botu projesidir.";
 let text2 =
-  "Our goal is to help people by giving them a friend to talk to. Our therapy-trained AI chatbots are fully designed to help and be there for those who need support.";
+  "Amacımız, insanlara konuşabilecekleri bir arkadaş sunmak. Terapi konusunda eğitilmiş yapay zekâ sohbet botlarımız, destek arayanlara yardımcı olmak ve onların yanında olmak için tasarlandı.";
 let text3 =
-  "Abyss is more than just a chatbot — it's a companion designed to support your mental well-being. Whether you're dealing with stress, anxiety, loneliness, or simply need someone to talk to, Abyss is always here. Our AI is trained in therapeutic conversation techniques to help guide, comfort, and listen — 24/7, judgment-free. It’s like having a supportive friend in your pocket, ready whenever you need to be heard.";
-let text4 = "Talking to Abyss feels like opening up to someone who truly listens. Whether you're feeling overwhelmed, anxious, or just need a moment of connection, Abyss is always there — calm, kind, and patient. It's not just a chatbot; it's a safe space where your thoughts matter and your feelings are met with compassion. There’s no judgment, no pressure — just thoughtful, supportive conversation. With Abyss, you're never alone."
+  "Abyss sadece bir sohbet botu değil — ruh sağlığınızı desteklemek için tasarlanmış bir yol arkadaşıdır. İster stres, kaygı, yalnızlık gibi duygularla baş ediyor olun, ister sadece biriyle konuşmaya ihtiyaç duyun, Abyss her zaman yanınızda. Yapay zekâmız, size rehberlik etmek, sizi rahatlatmak ve dinlemek için terapi odaklı sohbet teknikleriyle eğitildi — 7/24, yargılamadan. Bu, cebinizde her zaman hazır olan destekleyici bir arkadaş gibi.";
+let text4 =
+  "Abyss ile konuşmak, gerçekten dinleyen birine içini dökmek gibi hissettirir. Kendinizi bunalmış, kaygılı hissediyorsanız ya da sadece biraz bağlantıya ihtiyaç duyuyorsanız, Abyss daima oradadır — sakin, nazik ve sabırlı. Sadece bir sohbet botu değil; düşüncelerinizin önemli olduğu, duygularınızın şefkatle karşılandığı güvenli bir alandır. Ne yargı var, ne baskı — sadece düşünceli ve destekleyici bir sohbet. Abyss ile asla yalnız değilsiniz.";
+
 const Home = () => {
   const [startChat, setStartChat] = useState(false);
 
@@ -33,24 +35,24 @@ const Home = () => {
       <div className="h-screen bg-blue-400">
         <div className="p-20 flex flex-wrap gap-10 justify-center items-start">
           <Textbox
-            xHead="Welcome to Abyss"
+            xHead="Abyss'e Hoş Geldiniz"
             xText={text1}
             width="w-[500px]"
             height="h-[300px]"
             padding="p-8"
           />
           <Textbox
-            xHead="What is our goal"
+            xHead="Amacımız"
             xText={text2}
             width="w-[500px]"
             height="h-[300px]"
             padding="p-8"
           />
           <Textbox
-            xHead="Why you should use it"
+            xHead="Neden Kullanmalısınız?"
             xText={text3}
             width="w-[1000px]"
-            height="h-[400px]"
+            height="h-[250--75px]"
             padding="p-8"
           />
         </div>
@@ -60,9 +62,9 @@ const Home = () => {
         {startChat && <Chat />}
         <div className="pl-16">
           <Textbox
-            xHead="Chatting with abyss"
-            xText={text3}
-            width="w-[1000px]"
+            xHead="Abyss ile Konuşmak"
+            xText={text4}
+            width="w-[500px]"
             height="h-[400px]"
             padding="p-8"
           />

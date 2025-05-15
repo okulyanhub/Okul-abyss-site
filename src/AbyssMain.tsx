@@ -1,11 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 const DEMO_REPLIES = [
-  "Hello! How can I help you today?",
-  "That's an interesting thought. Can you elaborate?",
-  "I appreciate your input! 😊",
-  "Let's try to figure that out together.",
-  "I'm just a simulation, but I'll do my best to chat like an AI!"
+  "Merhaba! Size nasıl yardımcı olabilirim?",
+  "Bu ilginç bir düşünce. Biraz daha açar mısınız?",
+  "Görüşünüzü takdir ediyorum! 😊",
+  "Haydi bunu birlikte anlamaya çalışalım.",
+  "Ben bir simülasyonum ama elimden gelenin en iyisini yapacağım!"
 ];
 
 export default function RealisticDemoChatbot() {
@@ -42,7 +42,7 @@ export default function RealisticDemoChatbot() {
         setMessages(prev => [...prev, { role: 'bot', content: fullReply }]);
         setTypingBotMessage('');
       }
-    }, 30 + Math.random() * 50); // random delay
+    }, 30 + Math.random() * 50);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -54,7 +54,7 @@ export default function RealisticDemoChatbot() {
 
   return (
     <div className="flex flex-col h-screen bg-blue-500 p-3 sm:p-4">
-      <div className="text-xl font-bold text-white mb-3 text-center">🤖 Abyss AI Simulation</div>
+      <div className="text-xl font-bold text-white mb-3 text-center">🤖 Abyss Yapay Zekâ Simülasyonu</div>
       <div
         ref={chatRef}
         className="flex-1 overflow-y-auto bg-white rounded-xl p-3 shadow-inner space-y-2"
@@ -87,7 +87,7 @@ export default function RealisticDemoChatbot() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Type a message..."
+          placeholder="Mesajınızı yazın..."
           rows={1}
           className="flex-1 px-4 py-2 rounded-xl border border-gray-300 resize-none focus:outline-none focus:ring-2 focus:ring-blue-300 text-sm"
         />
@@ -95,7 +95,7 @@ export default function RealisticDemoChatbot() {
           onClick={sendMessage}
           className="bg-white text-blue-600 px-4 py-2 rounded-xl border hover:bg-blue-100 text-sm font-semibold"
         >
-          Send
+          Gönder
         </button>
       </div>
     </div>

@@ -10,18 +10,18 @@ const Navbar = () => {
         <img src={Abyss_Logo} alt="Abyss Logo" className="w-24" />
         <ul className="flex items-center gap-x-6">
           <li>
-            <Link to="/" className="text-lg font-semibold cursor-pointer hover-gradient-text" data-text="Home">
-              Home
+            <Link to="/" className="text-lg font-semibold cursor-pointer hover-gradient-text" data-text="Ev">
+              Ev
             </Link>
           </li>
           <li>
-            <Link to="/about" className="text-lg font-semibold cursor-pointer hover-gradient-text" data-text="About Us">
-              About Us
+            <Link to="/about" className="text-lg font-semibold cursor-pointer hover-gradient-text" data-text="Hakkımızda">
+              Hakkımızda
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="text-lg font-semibold cursor-pointer hover-gradient-text" data-text="Contact Us">
-              Contact Us
+            <Link to="/contact" className="text-lg font-semibold cursor-pointer hover-gradient-text" data-text="iletişim">
+              iletişim
             </Link>
           </li>
           <li>

@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 const messageSequence = [
-  { sender: 'abyss', text: 'Hello Ali, how are you today?' },
-  { sender: 'user', text: 'Not bad Abyss, could be better.' },
-  { sender: 'abyss', text: "No problem, you can talk with me — I'm always here for you." },
-  { sender: 'user', text: 'Thanks Abyss!' },
+  { sender: 'abyss', text: "Merhaba Ali, bugün nasılsın" },
+  { sender: 'user', text: 'Kötü değil Abyss, daha iyi olabilirdim.' },
+  { sender: 'abyss', text: "Sorun değil, benimle konuşabilirsin - her zaman senin için buradayım." },
+  { sender: 'user', text: 'Teşekkürler Abyss!' },
 ];
 
 const Chat = () => {
@@ -43,7 +43,7 @@ const Chat = () => {
   return (
     <div
       ref={containerRef}
-      className="bg-white border border-gray-800 rounded-2xl shadow-md p-6 w-[500px] h-[500px] overflow-y-auto flex flex-col gap-4"
+      className="bg-white border border-gray-800 rounded-2xl shadow-md p-6 w-[500px] h-[400px] overflow-y-auto flex flex-col gap-4"
     >
       {visibleMessages.map((msg, i) => (
         <div key={i} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
